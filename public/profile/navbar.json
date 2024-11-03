@@ -14,10 +14,6 @@
             "href": "/about"
         },
         {
-            "title": "Projects",
-            "href": "/projects"
-        },
-        {
             "title": "Blog",
             "href": "https://mmzala.github.io/blog/",
             "type": "link"
