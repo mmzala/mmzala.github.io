@@ -1,0 +1,111 @@
+{
+    "projects" : [
+        {
+            "title": "Coral Engine",
+            "bodyText": "- A custom engine made with C++\n - Support for multiple platforms, PlayStation 5 and Windows\n - **Contribution:** Playstation 5 platform, graphics and CI/CD pipelines\n",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/GuusKemperman/CoralEngine"
+                }
+            ],
+            "tags" : [
+                "C++",
+                "PlayStation 5",
+                "Graphics",
+                "CI/CD Pipelines"
+            ]
+        },
+        {
+            "title": "Turbo Tails",
+            "bodyText": "- An UE5 game",
+            "links": [
+                {
+                    "text": "Live",
+                    "href": "https://gennakh.itch.io/turbo-tails"
+                }
+            ],
+            "tags" : [
+                "C++",
+                "Unreal Engine 5",
+                "Gameplay",
+                "CI/CD Pipelines"
+            ]
+        },
+        {
+            "title": "CoPilot Designer",
+            "bodyText": "- Internship/work",
+            "links": [
+                {
+                    "text": "Live",
+                    "href": "https://www.talespin.com/copilot-designer?utm_source=screenspace&utm_content=lp0"
+                }
+            ],
+            "tags" : [
+                "C#",
+                "Unity Engine",
+                "Tools"
+            ]
+        },
+        {
+            "title": "Clustered Shading",
+            "bodyText": "- PS5 shading optimization project",
+            "links": [
+                {
+                    "text": "Blog Post",
+                    "href": "https://mmzala.github.io/blog/clustered-shading.html"
+                }
+            ],
+            "tags" : [
+                "C++",
+                "Playstation 5",
+                "Graphics"
+            ]
+        },
+        {
+            "title": "Lichgate",
+            "bodyText": "- A game made with Coral Engine",
+            "links": [
+                {
+                    "text": "Live",
+                    "href": "https://buas.itch.io/lichgate"
+                }
+            ],
+            "tags" : [
+                "C++",
+                "Playstation 5",
+                "Graphics"
+            ]
+        },
+        {
+            "title": "Worship",
+            "bodyText": "- internship",
+            "links": [
+                {
+                    "text": "Article (Dutch)",
+                    "href": "https://www.xr-lab.nl/portfolio/items/worship-mediacollege-amsterdam-2021"
+                }
+            ],
+            "tags" : [
+                "C++",
+                "Unreal Engine 5",
+                "Gameplay"
+            ]
+        },
+        {
+            "title": "Fiber Job System",
+            "bodyText": "- internship",
+            "links": [
+                {
+                    "text": "Blog Post",
+                    "href": "https://mmzala.github.io/blog/multi-threading-fibers.html"
+                }
+            ],
+            "tags" : [
+                "C++",
+                "Unreal Engine 5",
+                "Gameplay"
+            ]
+        }
+    ]
+}

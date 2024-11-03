@@ -1,0 +1,16 @@
+{
+    "social": [
+        {
+            "network" : "linkedin",
+            "href": "https://www.linkedin.com/in/marcin-zalewski-6a17231a4/"
+        },
+        {
+            "network" : "github",
+            "href": "https://github.com/mmzala"
+        },
+        {
+            "network" : "email",
+            "href": "mailto:marcinzal24@gmail.com"
+        }
+    ]
+}
