@@ -81,7 +81,7 @@ function HomeAndProjects() {
 
       <div className="section-content-container" style={styles.projectsContainer}>
         <Container style={styles.containerStyle}>
-          <Row xs={1} sm={1} md={2} lg={3} className="g-4">
+          <Row xs={1} sm={1} md={1} lg={2} className="g-4">
             {projectData.projects?.slice(0, numberOfItems).map((project) => (
               <Fade key={project.title}>
                 <ProjectCard project={project} />

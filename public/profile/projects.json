@@ -1,6 +1,7 @@
 {
     "projects" : [
         {
+            "image": "https://youtu.be/Z4UFHaJ_ulQ?si=YZyBjKKE4wVzF6yw",
             "title": "Coral Engine",
             "bodyText": "- A custom engine made with C++\n - Support for multiple platforms, PlayStation 5 and Windows\n - **Contribution:** Playstation 5 platform, graphics and CI/CD pipelines\n",
             "links": [
@@ -17,6 +18,7 @@
             ]
         },
         {
+            "image": "https://www.youtube.com/watch?v=_POt0CzPkBU",
             "title": "Turbo Tails",
             "bodyText": "- An UE5 game",
             "links": [
@@ -33,6 +35,7 @@
             ]
         },
         {
+            "image": "https://www.youtube.com/watch?v=z2hUdgocZRI",
             "title": "CoPilot Designer",
             "bodyText": "- Internship/work",
             "links": [
@@ -48,6 +51,7 @@
             ]
         },
         {
+            "image": "https://youtu.be/96lO6fJOVrE",
             "title": "Clustered Shading",
             "bodyText": "- PS5 shading optimization project",
             "links": [
@@ -63,6 +67,7 @@
             ]
         },
         {
+            "image": "https://www.youtube.com/watch?v=QzNdgcYAYl4",
             "title": "Lichgate",
             "bodyText": "- A game made with Coral Engine",
             "links": [
@@ -74,22 +79,9 @@
             "tags" : [
                 "C++",
                 "Playstation 5",
-                "Graphics"
-            ]
-        },
-        {
-            "title": "Worship",
-            "bodyText": "- internship",
-            "links": [
-                {
-                    "text": "Article (Dutch)",
-                    "href": "https://www.xr-lab.nl/portfolio/items/worship-mediacollege-amsterdam-2021"
-                }
-            ],
-            "tags" : [
-                "C++",
-                "Unreal Engine 5",
-                "Gameplay"
+                "Graphics",
+                "Gameplay",
+                "CI/CD Pipelines"
             ]
         },
         {
@@ -99,6 +91,21 @@
                 {
                     "text": "Blog Post",
                     "href": "https://mmzala.github.io/blog/multi-threading-fibers.html"
+                }
+            ],
+            "tags" : [
+                "C++",
+                "Tools"
+            ]
+        },
+        {
+            "image": "https://www.youtube.com/watch?v=HqAOVkCEsqo&t=35s",
+            "title": "Worship",
+            "bodyText": "- internship",
+            "links": [
+                {
+                    "text": "Article (Dutch)",
+                    "href": "https://www.xr-lab.nl/portfolio/items/worship-mediacollege-amsterdam-2021"
                 }
             ],
             "tags" : [

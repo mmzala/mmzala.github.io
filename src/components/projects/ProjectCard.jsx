@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import {
   Button, Card, Badge, Col,
 } from 'react-bootstrap';
+import ReactPlayer from 'react-player';
 import PropTypes from 'prop-types';
 import { ThemeContext } from 'styled-components';
 import ReactMarkdown from 'react-markdown';
@@ -18,11 +19,12 @@ const styles = {
     borderRadius: 10,
   },
   cardTitleStyle: {
-    fontSize: 24,
+    fontSize: 30,
     fontWeight: 700,
   },
   cardTextStyle: {
     textAlign: 'left',
+    fontSize: 18,
   },
   linkStyle: {
     textDecoration: 'none',
@@ -30,6 +32,16 @@ const styles = {
   },
   buttonStyle: {
     margin: 5,
+    fontSize: 18,
+  },
+  playerWrapper: {
+    position: 'relative',
+    paddingTop: '56.25%',
+  },
+  reactPlayer: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
   },
 };
 
@@ -49,7 +61,20 @@ const ProjectCard = (props) => {
         }}
         text={theme.bsSecondaryVariant}
       >
-        <Card.Img variant="top" src={project?.image} />
+        {project?.image && (
+          <div className="playerWrapper">
+            <ReactPlayer
+              url={project?.image}
+              className="react-player"
+              playing
+              width="100%"
+              muted
+              controls
+              loop
+            />
+          </div>
+        )}
+
         <Card.Body>
           <Card.Title style={styles.cardTitleStyle}>{project.title}</Card.Title>
           <Card.Text style={styles.cardTextStyle}>
