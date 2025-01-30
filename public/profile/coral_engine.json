@@ -1,0 +1,22 @@
+{
+    "description": "A custom game engine written from scratch in C++, together in a team of both programmers and designers, supporting Windows and PlayStation 5!",
+    "videoSource": "https://youtu.be/Z4UFHaJ_ulQ?si=YZyBjKKE4wVzF6yw",
+
+    "sections": [
+        {
+            "header": "Instancing",
+            "about": "TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test",
+            "imageSource": "images/about/Marcin.jpg"
+        },
+        {
+            "header": "Clustered Shading",
+            "about": "TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test",
+            "imageSource": "images/about/Marcin.jpg"
+        },
+        {
+            "header": "Post Processing",
+            "about": "TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test",
+            "imageSource": "images/about/Marcin.jpg"
+        }
+    ]
+}

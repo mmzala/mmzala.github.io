@@ -6,6 +6,10 @@
             "bodyText": "A custom game engine we wrote from scratch in C++.\n - **Team size:** 10\n - **Contribution:** PlayStation 5 support | Graphics (Clustered Shading, SSAO, VFX, Post-Processing and more!) | CI/CD Pipelines",
             "links": [
                 {
+                    "text": "Learn More",
+                    "href": "/coral_engine"
+                },
+                {
                     "text": "GitHub",
                     "href": "https://github.com/GuusKemperman/CoralEngine"
                 }
@@ -59,7 +63,7 @@
         {
             "image": "https://www.youtube.com/watch?v=z2hUdgocZRI",
             "title": "CoPilot Designer",
-            "bodyText": "During my internship and summer work at Talespin, I have contributed to CoPilot Designer, which is a no-code authoring tool for immersive soft skills learning content.\n - **Team size:** A large company\n - **Contribution:** Working with QA to fix unintended behaviour | Maintaining web platform | User data updater for each applications new version | Image exporter for visual graphs | QoL features for artists",
+            "bodyText": "During my internship and summer work at Talespin, I have contributed to CoPilot Designer, which is a no-code authoring tool for immersive soft skills learning content.\n - **Team size:** -\n - **Contribution:** Working with QA to fix unintended behaviour | Maintaining web platform | User data updater for each applications new version | Image exporter for visual graphs | QoL features for artists",
             "links": [
                 {
                     "text": "Live",
