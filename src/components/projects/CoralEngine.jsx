@@ -104,7 +104,9 @@ function CoralEngine(props) {
 
                     </Col>
                     <Col style={styles.sectionImageContainer}>
-                      <img src={section.imageSource} alt="showcase" />
+                      {section.imageSource ? (
+                        <img src={section.imageSource} alt="showcase" />
+                      ) : <ReactPlayer url={section.videoSource} className="react-player" playing muted controls loop />}
                     </Col>
                   </Row>
                 ))}
