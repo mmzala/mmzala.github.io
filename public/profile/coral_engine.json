@@ -4,7 +4,12 @@
 
     "sections": [
         {
-            "header": "Instancing",
+            "header": "PlayStation 5 Support",
+            "about": "TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test",
+            "imageSource": "images/about/Marcin.jpg"
+        },
+        {
+            "header": "Instancing and Batching",
             "about": "TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test",
             "imageSource": "images/about/Marcin.jpg"
         },
@@ -14,7 +19,22 @@
             "imageSource": "images/about/Marcin.jpg"
         },
         {
+            "header": "Shading Techniques",
+            "about": "TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test",
+            "imageSource": "images/about/Marcin.jpg"
+        },
+        {
             "header": "Post Processing",
+            "about": "TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test",
+            "imageSource": "images/about/Marcin.jpg"
+        },
+        {
+            "header": "User Interface",
+            "about": "TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test",
+            "imageSource": "images/about/Marcin.jpg"
+        },
+        {
+            "header": "CI/CD Pipelines",
             "about": "TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test TEST test",
             "imageSource": "images/about/Marcin.jpg"
         }
