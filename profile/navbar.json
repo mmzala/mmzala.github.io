@@ -1,0 +1,27 @@
+{
+    "logo" : {
+        "source": "images/logo.png",
+        "height" : 45,
+        "width" : 50
+    },
+    "sections": [
+        {
+            "title": "Home",
+            "href": "/"
+        },
+        {
+            "title": "About",
+            "href": "/about"
+        },
+        {
+            "title": "Blog",
+            "href": "https://mmzala.github.io/blog/",
+            "type": "link"
+        },
+        {
+            "title": "Resume",
+            "href": "https://drive.google.com/file/d/1NFoKNeI_a-bh8fnAJ9_WVX2fjTk_T-FF/view?usp=sharing",
+            "type": "link"
+        }
+    ]
+}

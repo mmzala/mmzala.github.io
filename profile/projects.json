@@ -1,0 +1,135 @@
+{
+    "projects" : [
+        {
+            "image": "https://youtu.be/Z4UFHaJ_ulQ?si=YZyBjKKE4wVzF6yw",
+            "title": "Coral Engine",
+            "bodyText": "A custom game engine we wrote from scratch in C++.\n - **Team size:** 10\n - **Contribution:** PlayStation 5 support | Graphics (Clustered Shading, SSAO, VFX, Post-Processing and more!) | CI/CD Pipelines",
+            "links": [
+                {
+                    "text": "Learn More",
+                    "href": "/coral_engine"
+                },
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/GuusKemperman/CoralEngine"
+                }
+            ],
+            "tags" : [
+                "C++",
+                "PlayStation 5",
+                "Windows",
+                "Graphics",
+                "CI/CD Pipelines"
+            ]
+        },
+        {
+            "image": "https://www.youtube.com/watch?v=QzNdgcYAYl4",
+            "title": "Lichgate",
+            "bodyText": "A relentless survivor, action rogue-like where you must grow stronger to vanquish the undead - made with our custom-built Coral Engine!\n - **Team size:** 10\n - **Contribution:** Movement and shooting mechanics | VFX",
+            "links": [
+                {
+                    "text": "Live",
+                    "href": "https://buas.itch.io/lichgate"
+                }
+            ],
+            "tags" : [
+                "Coral Engine",
+                "C++",
+                "PlayStation 5",
+                "Windows",
+                "Graphics",
+                "Gameplay",
+                "CI/CD Pipelines"
+            ]
+        },
+        {
+            "image": "https://www.youtube.com/watch?v=_POt0CzPkBU",
+            "title": "Turbo Tails",
+            "bodyText": "A 4 player mouse racing game with chaotic weapons.\n - **Team size:** 13\n - **Contribution:** Camera movement | Weapons | CI/CD Pipelines | UI",
+            "links": [
+                {
+                    "text": "Live",
+                    "href": "https://gennakh.itch.io/turbo-tails"
+                }
+            ],
+            "tags" : [
+                "C++",
+                "Unreal Engine 5",
+                "Windows",
+                "Gameplay",
+                "CI/CD Pipelines"
+            ]
+        },
+        {
+            "image": "https://www.youtube.com/watch?v=z2hUdgocZRI",
+            "title": "CoPilot Designer",
+            "bodyText": "During my internship and summer work at Talespin, I have contributed to CoPilot Designer, which is a no-code authoring tool for immersive soft skills learning content.\n - **Team size:** -\n - **Contribution:** Working with QA to fix unintended behaviour | Maintaining web platform | User data updater for each applications new version | Image exporter for visual graphs | QoL features for artists",
+            "links": [
+                {
+                    "text": "Live",
+                    "href": "https://www.talespin.com/copilot-designer?utm_source=screenspace&utm_content=lp0"
+                }
+            ],
+            "tags" : [
+                "C#",
+                "Javascript",
+                "Unity Engine",
+                "Windows",
+                "VR platforms",
+                "Mac OS",
+                "Web",
+                "Tools"
+            ]
+        },
+        {
+            "image": "https://youtu.be/96lO6fJOVrE",
+            "title": "Clustered Shading",
+            "bodyText": "A PBR renderer able to render tens of thousands of lights at playable frame-rates, created for the PlayStation 5.\n - **Team size:** Solo\n - **Contribution:** PBR with Normal Mapping | Culling tens of thousands of lights | Blog Post",
+            "links": [
+                {
+                    "text": "Blog Post",
+                    "href": "https://mmzala.github.io/blog/clustered-shading.html"
+                }
+            ],
+            "tags" : [
+                "C++",
+                "PlayStation 5",
+                "Graphics"
+            ]
+        },
+        {
+            "title": "Fiber Based Job System",
+            "bodyText": "A research project about multi-threading in game engines and working with fibers to create a job system.\n - **Team size:** Solo\n - **Contribution:** Job System using Fibers | Blog Post",
+            "links": [
+                {
+                    "text": "Blog Post",
+                    "href": "https://mmzala.github.io/blog/multi-threading-fibers.html"
+                },
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/mmzala/fiber-job-system"
+                }
+            ],
+            "tags" : [
+                "C++",
+                "Tools"
+            ]
+        },
+        {
+            "image": "https://www.youtube.com/watch?v=HqAOVkCEsqo&t=35s",
+            "title": "Worship",
+            "bodyText": "A co-op puzzle platformer where you have to work together to avoid obstacles and find a way to bring the green crystal to the altar! Made during my internship at XR Lab.\n - **Team size:** 10\n - **Contribution:** Camera movement | Obstacles",
+            "links": [
+                {
+                    "text": "Article (Dutch)",
+                    "href": "https://www.xr-lab.nl/portfolio/items/worship-mediacollege-amsterdam-2021"
+                }
+            ],
+            "tags" : [
+                "C++",
+                "Unreal Engine 5",
+                "Gameplay"
+            ]
+        }
+    ]
+}

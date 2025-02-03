@@ -1,0 +1,42 @@
+{
+    "description": "A custom game engine written from scratch in C++, together in a team of both programmers and designers, supporting Windows and PlayStation 5!",
+    "videoSource": "https://youtu.be/Z4UFHaJ_ulQ?si=YZyBjKKE4wVzF6yw",
+
+    "sections": [
+        {
+            "header": "PlayStation 5 Support",
+            "about": "I have worked on implementing and maintaining support for the PlayStation 5 platform on an already existing codebase, which included refactoring our codebase to support the PlayStation platform, writing cross-platforms APIs for things like rendering and input handling, creating distribution builds using tools provided by PlayStation and testing the engine/game on the said platform.",
+            "imageSource": "images/coral_engine/PS5Logo.png"
+        },
+        {
+            "header": "Instancing and Batching",
+            "about": "Lichgate, the game made using Coral Engine, has a world that is procedurally generated and can have hundreds of enemies in the scene at any time. For us this meant a lot of repeating geometry to render each frame. By creating batches of data and using instancing, we have close to doubled our frame rate and reduced our draw calls from thousands to ~50, allowing us to run stable 60 FPS at all times in 4K resolution on the PlayStation 5. \n\n I have achieved this by, at the beginning of the frame sorting our objects to be rendered based on mesh - material pairs. Then the relevant rendering data for each object instance, such as transforms, bone matrices and material identifiers, we have spread across 4 buckets. - Shadow  - Outline  - Opaque  - Transparent - \n This means that some of the same data will be in multiple places, as some objects want to have an outline but are also belong to the opaque bucket, but we make that sacrifice for data locality (In some cases we still could reuse data across buckets, such as opaque transform matrices can be reused in the shadow bucket). During render command recording we can use the buckets needed to only render the objects we want, and since they are sorted, we can instance the objects efficiently. This technique was definitely useful when the user entered the end game when the enemies accumulated very fast and many corpses could be laying on the ground.",
+            "videoSource": "images/coral_engine/PerformanceShowcase.mp4"
+        },
+        {
+            "header": "Clustered Shading",
+            "about": "One of the biggest selling points of our engine is support for hundreds of thousands of point lights while maintaining playable frame rates. This allowed us to play with many point light, which we have used to our advantage by e.g. putting a point light in each eye for all our enemies in our game, Lichgate. \n\n I have achieved this by subdividing the viewing frustum of the camera into AABBs, using a depth pre-pass to cull away unneeded cluster AABBs where no lights could be present, and then assigning lights to clusters by checking for each light, if its range collides with any clusters. Then during the shading pass, we use this clustering information by calculating lighting for only the relevant lights for the current pixel, by getting lights from the cluster the pixel resides in.",
+            "videoSource": "images/coral_engine/ClusteredShading.mp4"
+        },
+        {
+            "header": "Shading Techniques",
+            "about": "Coral Engine supports 2 shading paths, which can be chosen as the user wants and both make use of Percentage Closer Filtering Shadows. The 2 paths are: - Simple Diffuse Rendering - Physically Based Rendering \n\n Coral Engine first target was a physically based renderer, but later on during our game's production we have switched to a simple diffuse renderer to match our art style better.",
+            "videoSource": "images/coral_engine/PBRShadingPath.mp4"
+        },
+        {
+            "header": "Post Processing",
+            "about": "To enhance our visuals, I have worked on a post processing pipeline, which includes a number of different effects. HDR, tone-mapping using LUTs, exposure, outlines and Screen-Space Ambient-Occlusion.",
+            "imageSource": "images/coral_engine/PostProcessing.png"
+        },
+        {
+            "header": "User Interface",
+            "about": "I have implemented a User Interface editor and renderer to Coral Engine. This includes, rendering text, with support for different fonts, sprites and a simple editor to change the available values.",
+            "videoSource": "images/coral_engine/UserInterface.mp4"
+        },
+        {
+            "header": "CI/CD Pipelines",
+            "about": "I have worked on ensuring quality of the engine, by writing GitHub actions tests, such compiling for both Windows and PlayStation5 platforms and running unit tests when a pull request is made. I have also created a release pipeline, which automatically creates and packages builds for distribution when a new release is made.",
+            "imageSource": "images/coral_engine/CICDPipelines.jpg"
+        }
+    ]
+}
