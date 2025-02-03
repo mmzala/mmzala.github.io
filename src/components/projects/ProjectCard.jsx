@@ -4,8 +4,9 @@ import {
 } from 'react-bootstrap';
 import ReactPlayer from 'react-player';
 import PropTypes from 'prop-types';
-import { ThemeContext } from 'styled-components';
+import styled, { ThemeContext } from 'styled-components';
 import ReactMarkdown from 'react-markdown';
+import { NavLink } from 'react-router-dom';
 
 const styles = {
   badgeStyle: {
@@ -45,6 +46,19 @@ const styles = {
   },
 };
 
+const InternalNavLink = styled(NavLink)`
+  color: ${(props) => props.theme.navbarTheme.linkColor};
+  &:hover {
+    color: ${(props) => props.theme.navbarTheme.linkHoverColor};
+  }
+  &::after {
+    background-color: ${(props) => props.theme.accentColor};
+  }
+  &.navbar__link--active {
+    color: ${(props) => props.theme.navbarTheme.linkActiveColor};
+  }
+`;
+
 const ProjectCard = (props) => {
   const theme = useContext(ThemeContext);
   const parseBodyText = (text) => <ReactMarkdown children={text} />;
@@ -83,7 +97,16 @@ const ProjectCard = (props) => {
         </Card.Body>
 
         <Card.Body>
-          {project?.links?.map((link) => (
+          {project?.links?.map((link) => (link?.type === 'internal' ? (
+            <InternalNavLink
+              key={link.href}
+              style={styles.buttonStyle}
+              variant={'outline-' + theme.bsSecondaryVariant}
+              to={link.href}
+            >
+              {link.text}
+            </InternalNavLink>
+          ) : (
             <Button
               key={link.href}
               style={styles.buttonStyle}
@@ -92,7 +115,7 @@ const ProjectCard = (props) => {
             >
               {link.text}
             </Button>
-          ))}
+          )))}
         </Card.Body>
         {project.tags && (
           <Card.Footer style={{ backgroundColor: theme.cardFooterBackground }}>
