@@ -26,7 +26,7 @@
             "headerTitle": "Projects"
         },
         {
-            "component": "projects/CoralEngine",
+            "component": "CoralEngine",
             "path": "/coral_engine",
             "headerTitle": "Coral Engine"
         }
