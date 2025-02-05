@@ -3,7 +3,7 @@
         {
             "image": "https://youtu.be/Z4UFHaJ_ulQ?si=YZyBjKKE4wVzF6yw",
             "title": "Coral Engine",
-            "bodyText": "A custom game engine we wrote from scratch in C++.\n - **Team size:** 10\n - **Contribution:** PlayStation 5 support | Graphics (Clustered Shading, SSAO, VFX, Post-Processing and more!) | CI/CD Pipelines",
+            "bodyText": "A custom game engine we wrote from scratch in C++, supporting PlayStation 5 and Windows.\n - **Team size:** 10\n - **Contribution:** PlayStation 5 support | Graphics (Clustered Shading, SSAO, VFX, Post-Processing and more!) | CI/CD Pipelines",
             "links": [
                 {
                     "text": "Learn More",
@@ -44,24 +44,6 @@
             ]
         },
         {
-            "image": "https://www.youtube.com/watch?v=_POt0CzPkBU",
-            "title": "Turbo Tails",
-            "bodyText": "A 4 player mouse racing game with chaotic weapons.\n - **Team size:** 13\n - **Contribution:** Camera movement | Weapons | CI/CD Pipelines | UI",
-            "links": [
-                {
-                    "text": "Live",
-                    "href": "https://gennakh.itch.io/turbo-tails"
-                }
-            ],
-            "tags" : [
-                "C++",
-                "Unreal Engine 5",
-                "Windows",
-                "Gameplay",
-                "CI/CD Pipelines"
-            ]
-        },
-        {
             "image": "https://www.youtube.com/watch?v=z2hUdgocZRI",
             "title": "CoPilot Designer",
             "bodyText": "During my internship and summer work at Talespin, I have contributed to CoPilot Designer, which is a no-code authoring tool for immersive soft skills learning content.\n - **Team size:** -\n - **Contribution:** Working with QA to fix unintended behaviour | Maintaining web platform | User data updater for each applications new version | Image exporter for visual graphs | QoL features for artists",
@@ -80,6 +62,51 @@
                 "Mac OS",
                 "Web",
                 "Tools"
+            ]
+        },
+        {
+            "image": "https://youtu.be/3kV_5KhaPuI",
+            "title": "Blightspire",
+            "bodyText": "A work-in-progress engine running on both Linux (Steam Deck) and Windows, using Vulkan.\n - **Team size:** 10\n - **Contribution:** Rendering pipeline including a Frame Graph | Steamworks API integration | Input handling including input actions and Steam Input API | CI/CD Pipelines",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/BredaUniversityGames/Y2024-25-PR-BB"
+                },
+                {
+                    "text": "My Input Actions Code",
+                    "href": "https://github.com/BredaUniversityGames/Y2024-25-PR-BB/blob/main/engine/application/public/input/action_manager.hpp"
+                },
+                {
+                    "text": "My Frame Graph Code",
+                    "href": "https://github.com/BredaUniversityGames/Y2024-25-PR-BB/blob/main/engine/renderer/public/frame_graph.hpp"
+                }
+            ],
+            "tags" : [
+                "C++",
+                "Steam Deck",
+                "Linux",
+                "Windows",
+                "Graphics",
+                "CI/CD Pipelines"
+            ]
+        },
+        {
+            "image": "https://www.youtube.com/watch?v=_POt0CzPkBU",
+            "title": "Turbo Tails",
+            "bodyText": "A 4 player mouse racing game with chaotic weapons.\n - **Team size:** 13\n - **Contribution:** Camera movement | Weapons | CI/CD Pipelines | UI",
+            "links": [
+                {
+                    "text": "Live",
+                    "href": "https://gennakh.itch.io/turbo-tails"
+                }
+            ],
+            "tags" : [
+                "C++",
+                "Unreal Engine 5",
+                "Windows",
+                "Gameplay",
+                "CI/CD Pipelines"
             ]
         },
         {
