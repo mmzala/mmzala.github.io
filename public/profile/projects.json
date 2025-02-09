@@ -29,7 +29,7 @@
             "bodyText": "A relentless survivor, action rogue-like where you must grow stronger to vanquish the undead - made with our custom-built Coral Engine!\n - **Type:** School project\n - **Team size:** 10\n - **Contribution:** Movement and shooting mechanics | VFX",
             "links": [
                 {
-                    "text": "Live",
+                    "text": "Itch.io Page",
                     "href": "https://buas.itch.io/lichgate"
                 }
             ],
@@ -49,7 +49,7 @@
             "bodyText": "During my internship and summer work at Talespin, I have contributed to CoPilot Designer, which is a no-code authoring tool for immersive soft skills learning content.\n - **Type:** Internship project that evolved into work project\n - **Team size:** -\n - **Contribution:** Working with QA to fix unintended behaviour | Maintaining web platform | User data updater for each applications new version | Image exporter for visual graphs | QoL features for artists",
             "links": [
                 {
-                    "text": "Live",
+                    "text": "Product Page",
                     "href": "https://www.talespin.com/copilot-designer?utm_source=screenspace&utm_content=lp0"
                 }
             ],
@@ -97,7 +97,7 @@
             "bodyText": "A 4 player mouse racing game with chaotic weapons.\n - **Type:** School project\n - **Team size:** 13\n - **Contribution:** Camera movement | Weapons | CI/CD Pipelines | UI",
             "links": [
                 {
-                    "text": "Live",
+                    "text": "Itch.io Page",
                     "href": "https://gennakh.itch.io/turbo-tails"
                 }
             ],
