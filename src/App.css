@@ -80,6 +80,11 @@
   font-weight: bold;
 }
 
+text {
+  font-size: xx-large;
+  font-weight: bold;
+}
+
 section.timeline-card-content {
   justify-content: center;
 }

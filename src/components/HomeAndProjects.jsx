@@ -67,13 +67,17 @@ function HomeAndProjects() {
           <h1 style={styles.nameStyle}>{homeData?.name}</h1>
           <div style={{ flexDirection: 'row' }}>
             <h2 style={styles.inlineChild}>I&apos;m&nbsp;</h2>
-            <Typewriter
-              options={{
-                loop: true,
-                autoStart: true,
-                strings: homeData?.roles,
-              }}
-            />
+            {homeData?.roles.length === 1 ? (
+              <text>{ homeData?.roles[0] }</text>
+            ) : (
+              <Typewriter
+                options={{
+                  loop: true,
+                  autoStart: true,
+                  strings: homeData?.roles,
+                }}
+              />
+            )}
           </div>
           <Social />
         </div>
