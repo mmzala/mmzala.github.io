@@ -4,9 +4,8 @@ import {
 } from 'react-bootstrap';
 import ReactPlayer from 'react-player';
 import PropTypes from 'prop-types';
-import styled, { ThemeContext } from 'styled-components';
+import { ThemeContext } from 'styled-components';
 import ReactMarkdown from 'react-markdown';
-import { NavLink } from 'react-router-dom';
 
 const styles = {
   badgeStyle: {
@@ -45,19 +44,6 @@ const styles = {
     left: 0,
   },
 };
-
-const InternalNavLink = styled(NavLink)`
-  color: ${(props) => props.theme.navbarTheme.linkColor};
-  &:hover {
-    color: ${(props) => props.theme.navbarTheme.linkHoverColor};
-  }
-  &::after {
-    background-color: ${(props) => props.theme.accentColor};
-  }
-  &.navbar__link--active {
-    color: ${(props) => props.theme.navbarTheme.linkActiveColor};
-  }
-`;
 
 const ProjectCard = (props) => {
   const theme = useContext(ThemeContext);
@@ -102,14 +88,14 @@ const ProjectCard = (props) => {
 
         <Card.Body>
           {project?.links?.map((link) => (link?.type === 'internal' ? (
-            <InternalNavLink
+            <Button
               key={link.href}
               style={styles.buttonStyle}
               variant={'outline-' + theme.bsSecondaryVariant}
-              to={link.href}
+              onClick={() => window.open(link.href, '_self')}
             >
               {link.text}
-            </InternalNavLink>
+            </Button>
           ) : (
             <Button
               key={link.href}

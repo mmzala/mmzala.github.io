@@ -6,7 +6,7 @@
             "bodyText": "A custom game engine we wrote from scratch in C++, supporting PlayStation 5 and Windows.\n - **Type:** School project\n - **Team size:** 10 (6 programmers/4 designers/outsourced artists)\n - **Contribution:** PlayStation 5 support | Graphics (Clustered Shading, SSAO, VFX, Post-Processing and more!) | CI/CD Pipelines",
             "links": [
                 {
-                    "text": "Learn More",
+                    "text": "Learn More!",
                     "href": "/coral_engine",
                     "type": "internal"
                 },
