@@ -58,7 +58,7 @@ function HomeAndProjects() {
       .then((res) => setProjectData(res))
       .catch((err) => err);
   }, []);
-  const numberOfItems = showMore && projectData ? projectData.length : 6;
+  const numberOfItems = showMore && projectData ? projectData.length : 8;
 
   return homeData && projectData ? (
     <>
