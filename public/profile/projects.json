@@ -1,7 +1,7 @@
 {
     "projects" : [
         {
-            "image": "https://youtu.be/Z4UFHaJ_ulQ?si=YZyBjKKE4wVzF6yw",
+            "video": "https://youtu.be/Z4UFHaJ_ulQ?si=YZyBjKKE4wVzF6yw",
             "title": "Coral Engine",
             "bodyText": "A custom game engine we wrote from scratch in C++, supporting PlayStation 5 and Windows.\n - **Type:** School project\n - **Team size:** 10 (6 programmers/4 designers/outsourced artists)\n - **Contribution:** PlayStation 5 support | Graphics (Clustered Shading, SSAO, VFX, Post-Processing and more!) | CI/CD Pipelines",
             "links": [
@@ -24,7 +24,7 @@
             ]
         },
         {
-            "image": "https://www.youtube.com/watch?v=QzNdgcYAYl4",
+            "video": "https://www.youtube.com/watch?v=QzNdgcYAYl4",
             "title": "Lichgate",
             "bodyText": "A relentless survivor, action rogue-like where you must grow stronger to vanquish the undead - made with our custom-built Coral Engine!\n - **Type:** School project\n - **Team size:** 10 (6 programmers/4 designers/outsourced artists)\n - **Contribution:** Movement and shooting mechanics | VFX",
             "links": [
@@ -44,7 +44,7 @@
             ]
         },
         {
-            "image": "https://www.youtube.com/watch?v=z2hUdgocZRI",
+            "video": "https://www.youtube.com/watch?v=z2hUdgocZRI",
             "title": "CoPilot Designer",
             "bodyText": "During my internship and summer work at Talespin, I have contributed to CoPilot Designer, which is a no-code authoring tool for immersive soft skills learning content.\n - **Type:** Internship project that evolved into work project\n - **Team size:** -\n - **Contribution:** Working with QA to fix unintended behaviour | Maintaining web platform | User data updater for each applications new version | Image exporter for visual graphs | QoL features for artists",
             "links": [
@@ -65,7 +65,7 @@
             ]
         },
         {
-            "image": "https://youtu.be/3kV_5KhaPuI",
+            "video": "https://youtu.be/3kV_5KhaPuI",
             "title": "Blightspire",
             "bodyText": "A work-in-progress engine running on both Linux (Steam Deck) and Windows, using Vulkan.\n - **Type:** School project\n - **Team size:** 10 (9 programmers/1 designer)\n - **Contribution:** Rendering pipeline including a Frame Graph | Steamworks API integration | Input handling including input actions and Steam Input API | CI/CD Pipelines",
             "links": [
@@ -92,7 +92,7 @@
             ]
         },
         {
-            "image": "https://www.youtube.com/watch?v=_POt0CzPkBU",
+            "video": "https://www.youtube.com/watch?v=_POt0CzPkBU",
             "title": "Turbo Tails",
             "bodyText": "A 4 player mouse racing game with chaotic weapons.\n - **Type:** School project\n - **Team size:** 13 (3 programmers/4 designers/6 artists)\n - **Contribution:** Camera movement | Weapons | CI/CD Pipelines | UI",
             "links": [
@@ -110,7 +110,7 @@
             ]
         },
         {
-            "image": "https://youtu.be/96lO6fJOVrE",
+            "video": "https://youtu.be/96lO6fJOVrE",
             "title": "Clustered Shading",
             "bodyText": "A PBR renderer able to render tens of thousands of lights at playable frame-rates, created for the PlayStation 5.\n - **Type:** Free time project that evolved into school project\n - **Team size:** Solo\n - **Contribution:** PBR with Normal Mapping | Culling tens of thousands of lights | Blog Post | And everything else",
             "links": [
@@ -158,7 +158,7 @@
             ]
         },
         {
-            "image": "https://www.youtube.com/watch?v=HqAOVkCEsqo&t=35s",
+            "video": "https://www.youtube.com/watch?v=HqAOVkCEsqo&t=35s",
             "title": "Worship",
             "bodyText": "A co-op puzzle platformer where you have to work together to avoid obstacles and find a way to bring the green crystal to the altar! Made during my internship at XR Lab.\n - **Type:** Internship project\n - **Team size:** 11 (5 programmers/6 artists)\n - **Contribution:** Camera movement | Obstacles",
             "links": [

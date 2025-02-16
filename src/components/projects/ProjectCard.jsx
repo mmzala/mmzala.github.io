@@ -75,10 +75,10 @@ const ProjectCard = (props) => {
         }}
         text={theme.bsSecondaryVariant}
       >
-        {project?.image && (
+        {project?.video && (
           <div className="playerWrapper">
             <ReactPlayer
-              url={project?.image}
+              url={project?.video}
               className="react-player"
               playing
               width="100%"
@@ -142,6 +142,7 @@ ProjectCard.propTypes = {
     title: PropTypes.string.isRequired,
     bodyText: PropTypes.string.isRequired,
     image: PropTypes.string,
+    video: PropTypes.string,
     links: PropTypes.arrayOf(PropTypes.shape({
       text: PropTypes.string.isRequired,
       href: PropTypes.string.isRequired,
