@@ -112,7 +112,7 @@
         {
             "image": "https://youtu.be/96lO6fJOVrE",
             "title": "Clustered Shading",
-            "bodyText": "A PBR renderer able to render tens of thousands of lights at playable frame-rates, created for the PlayStation 5.\n - **Type:** Free time project that evolved into school project\n - **Team size:** Solo\n - **Contribution:** PBR with Normal Mapping | Culling tens of thousands of lights | Blog Post",
+            "bodyText": "A PBR renderer able to render tens of thousands of lights at playable frame-rates, created for the PlayStation 5.\n - **Type:** Free time project that evolved into school project\n - **Team size:** Solo\n - **Contribution:** PBR with Normal Mapping | Culling tens of thousands of lights | Blog Post | And everything else",
             "links": [
                 {
                     "text": "Blog Post",
@@ -126,8 +126,22 @@
             ]
         },
         {
+            "title": "Ray-Tracing",
+            "bodyText": "A work-in-progress Vulkan ray-tracer.\n - **Type:** Free time project\n - **Team size:** Solo\n - **Contribution:** Vulkan ray-tracing pipeline | GLTF model loading | And everything else",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/mmzala/ray-tracer"
+                }
+            ],
+            "tags" : [
+                "C++",
+                "Graphics"
+            ]
+        },
+        {
             "title": "Fiber Based Job System",
-            "bodyText": "A research project about multi-threading in game engines and working with fibers to create a job system.\n - **Type:** Free time project that evolved into school project\n - **Team size:** Solo\n - **Contribution:** Job System using Fibers | Blog Post",
+            "bodyText": "A research project about multi-threading in game engines and working with fibers to create a job system.\n - **Type:** Free time project that evolved into school project\n - **Team size:** Solo\n - **Contribution:** Job System using Fibers | Blog Post | And everything else",
             "links": [
                 {
                     "text": "Blog Post",
