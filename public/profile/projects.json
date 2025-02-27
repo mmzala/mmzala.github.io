@@ -67,6 +67,7 @@
             ]
         },
         {
+            "image": "images/DragonRayTrace.png",
             "title": "Ray-Tracing",
             "bodyText": "A work-in-progress Vulkan ray-tracer.\n - **Type:** Free time project\n - **Team size:** Solo\n - **Contribution:** Vulkan ray-tracing pipeline | GLTF model loading | And everything else",
             "links": [
