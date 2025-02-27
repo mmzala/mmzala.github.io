@@ -15,27 +15,27 @@
         },
         {
             "header": "Clustered Shading",
-            "about": "One of the biggest selling points of our engine is support for hundreds of thousands of point lights while maintaining playable frame rates. This allowed us to play with many point light, which we have used to our advantage by e.g. putting a point light in each eye for all our enemies in our game, Lichgate. \n\n I have achieved this by subdividing the viewing frustum of the camera into AABBs, using a depth pre-pass to cull away unneeded cluster AABBs where no lights could be present, and then assigning lights to clusters by checking for each light, if its range collides with any clusters. Then during the shading pass, we use this clustering information by calculating lighting for only the relevant lights for the current pixel, by getting lights from the cluster the pixel resides in.",
+            "about": "One of the biggest selling points of our engine is support for hundreds of thousands of point lights while maintaining playable frame rates. This allowed us to play with many point light, which we have used to our advantage by e.g. putting a point light in each eye for all our enemies in our game, Lichgate. \n\n I have achieved this by subdividing the viewing frustum of the camera into AABBs, using a depth pre-pass to cull away unneeded cluster AABBs where no lights could be present, and then assigning lights to clusters by checking for each light, if its range collides with any clusters. Then during the shading pass, we use this clustering information by calculating lighting for only the relevant lights for the current pixel, by getting lights from the cluster the pixel resides in.\n\n Additionally to support transparency, I have added a pass that activates the needed clusters that transparent objects reside in, this is done because transparent objects are not included in the depth map and clusters for transparent objects would be culled away.",
             "videoSource": "images/coral_engine/ClusteredShading.mp4"
         },
         {
             "header": "Shading Techniques",
-            "about": "Coral Engine supports 2 shading paths, which can be chosen as the user wants and both make use of Percentage Closer Filtering Shadows. The 2 paths are: - Simple Diffuse Rendering - Physically Based Rendering \n\n Coral Engine first target was a physically based renderer, but later on during our game's production we have switched to a simple diffuse renderer to match our art style better.",
+            "about": "Coral Engine supports 2 shading paths, which can be chosen as the user wants and both make use of Percentage Closer Filtering Shadows and normal mapping. The 2 paths are: - Simple Diffuse Rendering - Physically Based Rendering \n\n Coral Engine first target was a physically based renderer, but later on during our game's production we have switched to a simple diffuse renderer to match our art style better.",
             "videoSource": "images/coral_engine/PBRShadingPath.mp4"
         },
         {
             "header": "Post Processing",
-            "about": "To enhance our visuals, I have worked on a post processing pipeline, which includes a number of different effects. HDR, tone-mapping using LUTs, exposure, outlines and Screen-Space Ambient-Occlusion.",
+            "about": "To enhance our visuals, I have worked on a post processing pipeline, which includes a number of different effects.\n - HDR\n - Tone-mapping using LUTs with exposure\n - Outlines\n - Screen-Space Ambient-Occlusion\n",
             "imageSource": "images/coral_engine/PostProcessing.png"
         },
         {
             "header": "User Interface",
-            "about": "I have implemented a User Interface editor and renderer to Coral Engine. This includes, rendering text, with support for different fonts, sprites and a simple editor to change the available values.",
+            "about": "I have implemented a User Interface editor and renderer to Coral Engine. This includes, rendering text, with support for different fonts, sprites and a simple editor to change the available values.\n\n On the rendering side, all of the UI is rendered using 1 draw call. This I have achieved because both textures and text are sprites and all of the information can be batched into buffers and rendered at once.",
             "videoSource": "images/coral_engine/UserInterface.mp4"
         },
         {
             "header": "CI/CD Pipelines",
-            "about": "I have worked on ensuring quality of the engine, by writing GitHub actions tests, such compiling for both Windows and PlayStation5 platforms and running unit tests when a pull request is made. I have also created a release pipeline, which automatically creates and packages builds for distribution when a new release is made.",
+            "about": "I have worked on ensuring quality of the engine, by writing GitHub actions tests, such compiling for both Windows and PlayStation 5 platforms and running unit tests when a pull request is made. I have also created a release pipeline, which automatically creates and packages builds for distribution when a new release is made.",
             "imageSource": "images/coral_engine/CICDPipelines.jpg"
         }
     ]
