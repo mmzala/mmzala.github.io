@@ -29,6 +29,11 @@
             "component": "CoralEngine",
             "path": "/coral_engine",
             "headerTitle": "Coral Engine"
+        },
+        {
+            "component": "Blightspire",
+            "path": "/blightspire",
+            "headerTitle": "Blightspire"
         }
     ]
 }

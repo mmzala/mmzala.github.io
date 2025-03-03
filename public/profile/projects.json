@@ -45,6 +45,11 @@
             "bodyText": "A work-in-progress engine running on both Linux (Steam Deck) and Windows, using Vulkan.\n - **Type:** School project\n - **Team size:** 10 (9 programmers/1 designer)\n - **Contribution:** Rendering pipeline including a Frame Graph | Steamworks API integration | Input handling including input actions and Steam Input API | CI/CD Pipelines",
             "links": [
                 {
+                    "text": "Learn More!",
+                    "href": "/blightspire",
+                    "type": "internal"
+                },
+                {
                     "text": "GitHub",
                     "href": "https://github.com/BredaUniversityGames/Y2024-25-PR-BB"
                 },

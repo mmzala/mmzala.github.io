@@ -9,6 +9,7 @@ const endpoints = {
   experiences: 'profile/experiences.json',
   projects: 'profile/projects.json',
   coral_engine: 'profile/coral_engine.json',
+  blightspire: 'profile/blightspire.json',
 };
 
 export default endpoints;

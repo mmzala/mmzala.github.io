@@ -1,0 +1,37 @@
+{
+    "description": "A currently being worked on custom game engine, targeting the Steam Deck with support for Linux and Windows. Written using C++ and Vulkan.",
+    "videoSource": "https://youtu.be/3kV_5KhaPuI",
+
+    "sections": [
+        {
+            "header": "Frame Graph",
+            "about": "",
+            "imageSource": "images/coral_engine/PS5Logo.png"
+        },
+        {
+            "header": "GPU Data Management",
+            "about": "",
+            "imageSource": "images/coral_engine/PS5Logo.png"
+        },
+        {
+            "header": "Post Processing - Bloom",
+            "about": "",
+            "imageSource": "images/coral_engine/PS5Logo.png"
+        },
+        {
+            "header": "Input Handling",
+            "about": "",
+            "imageSource": "images/coral_engine/PS5Logo.png"
+        },
+        {
+            "header": "Steam API",
+            "about": "",
+            "imageSource": "images/coral_engine/PS5Logo.png"
+        },
+        {
+            "header": "CI/CD Pipelines",
+            "about": "",
+            "imageSource": "images/coral_engine/PS5Logo.png"
+        }
+    ]
+}
