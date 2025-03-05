@@ -19,14 +19,14 @@
             "imageSource": "images/coral_engine/PS5Logo.png"
         },
         {
-            "header": "Input Handling",
-            "about": "",
-            "imageSource": "images/coral_engine/PS5Logo.png"
-        },
-        {
             "header": "Steam API",
             "about": "I have integrated the Steamworks API into our project to be able to use features such as Steam Overlay, Steam Input, Steam Achievements and more. Which adds user friendliness and saves us time that we would need to spend otherwise on implementing wanted features ourselves, such as achievements.\n\n Using this API, I am working on implementing all the features needed to get our game verified for the Steam Deck.",
             "imageSource": "images/blightspire/Steam.jpg"
+        },
+        {
+            "header": "Input Handling",
+            "about": "Using Steam Input for controllers and SDL for keyboard and mouse (also used for controllers as backup), I have managed input using input actions, which allows the player to customize their own input bindings for each action in our game.",
+            "videoSource": "images/blightspire/SteamInput.mp4"
         },
         {
             "header": "CI/CD Pipelines",
