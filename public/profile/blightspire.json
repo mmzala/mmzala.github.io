@@ -30,8 +30,8 @@
         },
         {
             "header": "CI/CD Pipelines",
-            "about": "",
-            "imageSource": "images/coral_engine/PS5Logo.png"
+            "about": "To help our team to automate build creation, I have developed a CI/CD pipeline that automatically builds, packages and uploads a new build for both Linux and Windows platforms to our development branch on Steam using GitHub Actions.\n\n The process of packaging our project is more involved than it can seem. This is because we have multiple different configurations we want to package (linux/windows distribution, linux/windows development etc.) and all of our assets are stored on Perforce, because the GitHub LFS space given to our project was not enough to satisfy our needs. To solve the first issue I have implemented a JSON file workflow for build configurations where it's specified what files need to be packaged. As for getting our assets from Perforce, I have written scripts that automatically pull all of our assets into the GitHub Action to be packaged.",
+            "imageSource": "images/blightspire/SteamPipe.jpg"
         }
     ]
 }
