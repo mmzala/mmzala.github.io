@@ -5,8 +5,8 @@
     "sections": [
         {
             "header": "Frame Graph",
-            "about": "",
-            "imageSource": "images/coral_engine/PS5Logo.png"
+            "about": "To support our rendering pipeline I have implemented a frame graph, that defines how our frame is rendered and automates aspects of our pipeline. Throughout the development of the project, with feedback from other graphics programmers on the team, I have improved upon and implemented new features for the frame graph based on our needs.\n\n Currently available features are:\n **>** Automatic memory barrier placement\n **>** Reusing output resources across different render passes\n **>** Render pass sorting\n **>** Ability to write to different parts of the same resource at the same time across different render passes\n **>** Automatic viewport and scissor setup",
+            "imageSource": "images/blightspire/FrameGraphRenderPasses.jpg"
         },
         {
             "header": "GPU Data Management",
