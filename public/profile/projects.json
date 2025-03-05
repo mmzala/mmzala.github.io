@@ -52,14 +52,6 @@
                 {
                     "text": "GitHub",
                     "href": "https://github.com/BredaUniversityGames/Y2024-25-PR-BB"
-                },
-                {
-                    "text": "My Input Actions Code",
-                    "href": "https://github.com/BredaUniversityGames/Y2024-25-PR-BB/blob/main/engine/application/public/input/action_manager.hpp"
-                },
-                {
-                    "text": "My Frame Graph Code",
-                    "href": "https://github.com/BredaUniversityGames/Y2024-25-PR-BB/blob/main/engine/renderer/public/frame_graph.hpp"
                 }
             ],
             "tags" : [

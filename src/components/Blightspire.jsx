@@ -1,9 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import ReactMarkdown from 'react-markdown';
-import { Container, Col, Row } from 'react-bootstrap';
+import {
+  Button, Container, Col, Row,
+} from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import Fade from 'react-reveal';
 import ReactPlayer from 'react-player';
+import { ThemeContext } from 'styled-components';
 import Header from './Header';
 import endpoints from '../constants/endpoints';
 import FallbackSpinner from './FallbackSpinner';
@@ -47,11 +50,16 @@ const styles = {
     alignItems: 'center',
     display: 'flex',
   },
+  buttonStyle: {
+    margin: 5,
+    fontSize: 18,
+  },
 };
 
 function Blightspire(props) {
   const { header } = props;
   const [data, setData] = useState(null);
+  const theme = useContext(ThemeContext);
 
   const parseIntro = (text) => (
     <ReactMarkdown
@@ -101,7 +109,16 @@ function Blightspire(props) {
                       <div style={styles.sectionText}>
                         {parseIntro(section.about)}
                       </div>
-
+                      {section.links?.map((link) => (
+                        <Button
+                          key={link.href}
+                          style={styles.buttonStyle}
+                          variant={'outline-' + theme.bsSecondaryVariant}
+                          onClick={() => window.open(link.href, '_blank')}
+                        >
+                          {link.text}
+                        </Button>
+                      ))}
                     </Col>
                     <Col style={styles.sectionImageContainer}>
                       {section.imageSource ? (
