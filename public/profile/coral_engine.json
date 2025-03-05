@@ -25,7 +25,7 @@
         },
         {
             "header": "Post Processing",
-            "about": "To enhance our visuals, I have worked on a post processing pipeline, which includes a number of different effects.\n - HDR\n - Tone-mapping using LUTs with exposure\n - Outlines\n - Screen-Space Ambient-Occlusion\n",
+            "about": "To enhance our visuals, I have worked on a post processing pipeline, which includes a number of different effects.\n **>** HDR\n **>** Tone-mapping using LUTs with exposure\n **>** Outlines\n **>** Screen-Space Ambient-Occlusion",
             "imageSource": "images/coral_engine/PostProcessing.png"
         },
         {
