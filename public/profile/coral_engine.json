@@ -36,7 +36,7 @@
         },
         {
             "header": "User Interface",
-            "about": "I have implemented a User Interface editor and renderer to Coral Engine. This includes, rendering text, with support for different fonts, sprites and a simple editor to change the available values.\n\n On the rendering side, all of the UI is rendered using 1 draw call. This I have achieved because both textures and text are sprites and all of the information can be batched into buffers and rendered at once.",
+            "about": "I have implemented a User Interface editor and renderer to Coral Engine. This includes, rendering text, with support for different fonts, sprites and a simple editor to change the available values.\n\n On the rendering side, all of the UI is rendered using 1 draw call. This I have achieved because both sprites and text are textures and all of the information can be batched into buffers and rendered at once.",
             "videoSource": "images/coral_engine/UserInterface.mp4"
         },
         {
