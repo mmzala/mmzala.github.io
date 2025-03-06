@@ -32,7 +32,7 @@
         {
             "header": "Post Processing - Bloom",
             "about": "",
-            "imageSource": "images/coral_engine/PS5Logo.png",
+            "videoSource": "images/blightspire/BloomComparison.mp4",
             "links": [
                 {
                     "text": "bloom_downsampling.frag",
