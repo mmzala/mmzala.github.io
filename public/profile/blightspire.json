@@ -21,7 +21,7 @@
         {
             "header": "GPU Data Management",
             "about": "Before any rendering happens, a compute shader dynamically creates a new ‘indirect’ index buffer to effectively merge geometry from unrelated meshes into a single indirect draw call. To make this possible I have contributed to our bindless resources setup. This means that instead of binding e.g. a diffuse, specular, ... textures before every draw call, the entire list of textures in the scene is bound at once and are accessed in the shaders using indices to the list.\n\n This technique is not only used for textures, but also materials. Which means that each instance of an object holds a material index that you can access your material with, and in turn the material holds indices for the textures of the instance inside the bindless textures list.",
-            "imageSource": "images/coral_engine/PS5Logo.png",
+            "imageSource": "images/blightspire/BindlessExample.png",
             "links": [
             {
                 "text": "graphics_context.cpp - Bindless resources",
