@@ -31,7 +31,7 @@
         },
         {
             "header": "Post Processing - Bloom",
-            "about": "",
+            "about": "To get a better feel for brightness in the scene I have implemented Bloom as a post-processing effect.\n\n Instead of using a basic guassian blur approach, which was our first implementation and it was slow, I used a different approach I discovered from Call Of Duty: Advanced Warfare. By first down-sampling the bloom image and then up-sampling it while applying a 3x3 filter kernel, I have achieved a blurred bloom image, which resembles normal guassian blurring and runs faster compared to it.",
             "videoSource": "images/blightspire/BloomComparison.mp4",
             "links": [
                 {
