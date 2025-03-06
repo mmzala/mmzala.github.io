@@ -1,0 +1,79 @@
+{
+    "description": "A currently being worked on custom game engine, targeting the Steam Deck with support for Linux and Windows. Written using C++ and Vulkan.",
+    "videoSource": "https://youtu.be/3kV_5KhaPuI",
+
+    "sections": [
+        {
+            "header": "Frame Graph",
+            "about": "To support our rendering pipeline I have implemented a frame graph, that defines how our frame is rendered and automates aspects of our pipeline. Throughout the development of the project, with feedback from other graphics programmers on the team, I have improved upon and implemented new features for the frame graph based on our needs.\n\n Currently available features are:\n **>** Automatic memory barrier placement\n **>** Reusing output resources across different render passes\n **>** Render pass sorting\n **>** Ability to write to different parts of the same resource at the same time across different render passes\n **>** Automatic viewport and scissor setup",
+            "imageSource": "images/blightspire/FrameGraphRenderPasses.jpg",
+            "links": [
+                {
+                    "text": "frame_graph.hpp",
+                    "href": "https://github.com/BredaUniversityGames/Y2024-25-PR-BB/blob/main/engine/renderer/public/frame_graph.hpp"
+                },
+                {
+                    "text": "frame_graph.cpp",
+                    "href": "https://github.com/BredaUniversityGames/Y2024-25-PR-BB/blob/main/engine/renderer/private/frame_graph.cpp"
+                }
+            ]
+        },
+        {
+            "header": "GPU Data Management",
+            "about": "Before any rendering happens, a compute shader dynamically creates a new ‘indirect’ index buffer to effectively merge geometry from unrelated meshes into a single indirect draw call. To make this possible I have contributed to our bindless resources setup. This means that instead of binding e.g. a diffuse, specular, ... textures before every draw call, the entire list of textures in the scene is bound at once and are accessed in the shaders using indices to the list.\n\n This technique is not only used for textures, but also materials. Which means that each instance of an object holds a material index that you can access your material with, and in turn the material holds indices for the textures of the instance inside the bindless textures list.",
+            "imageSource": "images/blightspire/BindlessExample.png",
+            "links": [
+            {
+                "text": "graphics_context.cpp - Bindless resources",
+                "href": "https://github.com/BredaUniversityGames/Y2024-25-PR-BB/blob/main/engine/renderer/private/graphics_context.cpp"
+            }
+        ]
+        },
+        {
+            "header": "Post Processing - Bloom",
+            "about": "To get a better feel for brightness in the scene I have implemented Bloom as a post-processing effect.\n\n Instead of using a basic guassian blur approach, which was our first implementation and it was slow, I used a different approach I discovered from Call Of Duty: Advanced Warfare. By first down-sampling the bloom image and then up-sampling it while applying a 3x3 filter kernel, I have achieved a blurred bloom image, which resembles normal guassian blurring and runs faster compared to it.",
+            "videoSource": "images/blightspire/BloomComparison.mp4",
+            "links": [
+                {
+                    "text": "bloom_downsampling.frag",
+                    "href": "https://github.com/BredaUniversityGames/Y2024-25-PR-BB/blob/main/shaders/bloom_downsampling.frag"
+                },
+                {
+                    "text": "bloom_upsampling.frag",
+                    "href": "https://github.com/BredaUniversityGames/Y2024-25-PR-BB/blob/main/shaders/bloom_upsampling.frag"
+                }
+            ]
+        },
+        {
+            "header": "Steam API",
+            "about": "I have integrated the Steamworks API into our project to be able to use features such as Steam Overlay, Steam Input, Steam Achievements and more. Which adds user friendliness and saves us time that we would need to spend otherwise on implementing wanted features ourselves, such as achievements.\n\n Using this API, I am working on implementing all the features needed to get our game verified for the Steam Deck.",
+            "imageSource": "images/blightspire/Steam.jpg"
+        },
+        {
+            "header": "Input Handling",
+            "about": "Using Steam Input for controllers and SDL for keyboard and mouse (also used for controllers as backup), I have managed input using input actions, which allows the player to customize their own input bindings for each action in our game.",
+            "videoSource": "images/blightspire/SteamInput.mp4",
+            "links": [
+                {
+                    "text": "action_manager.hpp",
+                    "href": "https://github.com/BredaUniversityGames/Y2024-25-PR-BB/blob/main/engine/application/public/input/action_manager.hpp"
+                },
+                {
+                    "text": "action_manager.cpp",
+                    "href": "https://github.com/BredaUniversityGames/Y2024-25-PR-BB/blob/main/engine/application/private/input/action_manager.cpp"
+                }
+            ]
+        },
+        {
+            "header": "CI/CD Pipelines",
+            "about": "To help our team to automate build creation, I have developed a CI/CD pipeline that automatically builds, packages and uploads a new build for both Linux and Windows platforms to our development branch on Steam using GitHub Actions.\n\n The process of packaging our project is more involved than it can seem. This is because we have multiple different configurations we want to package (linux/windows distribution, linux/windows development etc.) and all of our assets are stored on Perforce, because the GitHub LFS space given to our project was not enough to satisfy our needs. To solve the first issue I have implemented a JSON file workflow for build configurations where it's specified what files need to be packaged. As for getting our assets from Perforce, I have written scripts that automatically pull all of our assets into the GitHub Action to be packaged.",
+            "imageSource": "images/blightspire/SteamPipe.jpg",
+            "links": [
+                {
+                    "text": "steam-build-upload.yml - GitHub Action for automatic Steam builds",
+                    "href": "https://github.com/BredaUniversityGames/Y2024-25-PR-BB/blob/main/.github/workflows/steam-build-upload.yml"
+                }
+            ]
+        }
+    ]
+}

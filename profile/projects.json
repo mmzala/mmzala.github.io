@@ -11,7 +11,7 @@
                     "type": "internal"
                 },
                 {
-                    "text": "GitHub",
+                    "text": "GitHub (without PS5 code due to NDA)",
                     "href": "https://github.com/GuusKemperman/CoralEngine"
                 }
             ],
@@ -45,16 +45,13 @@
             "bodyText": "A work-in-progress engine running on both Linux (Steam Deck) and Windows, using Vulkan.\n - **Type:** School project\n - **Team size:** 10 (9 programmers/1 designer)\n - **Contribution:** Rendering pipeline including a Frame Graph | Steamworks API integration | Input handling including input actions and Steam Input API | CI/CD Pipelines",
             "links": [
                 {
+                    "text": "Learn More!",
+                    "href": "/blightspire",
+                    "type": "internal"
+                },
+                {
                     "text": "GitHub",
                     "href": "https://github.com/BredaUniversityGames/Y2024-25-PR-BB"
-                },
-                {
-                    "text": "My Input Actions Code",
-                    "href": "https://github.com/BredaUniversityGames/Y2024-25-PR-BB/blob/main/engine/application/public/input/action_manager.hpp"
-                },
-                {
-                    "text": "My Frame Graph Code",
-                    "href": "https://github.com/BredaUniversityGames/Y2024-25-PR-BB/blob/main/engine/renderer/public/frame_graph.hpp"
                 }
             ],
             "tags" : [
