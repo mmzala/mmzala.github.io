@@ -91,7 +91,7 @@ const ProjectCard = (props) => {
             <Button
               key={link.href}
               style={styles.buttonStyle}
-              variant={'outline-' + theme.bsSecondaryVariant}
+              variant={'outline-' + theme.highlightButtonVariant}
               onClick={() => window.open(link.href, '_self')}
             >
               {link.text}

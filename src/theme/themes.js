@@ -19,6 +19,7 @@ export const lightTheme = {
   bsPrimaryVariant: 'light',
   bsSecondaryVariant: 'dark',
   socialIconBgColor: '#121212',
+  highlightButtonVariant: 'primary',
 };
 
 export const darkTheme = {
@@ -42,4 +43,5 @@ export const darkTheme = {
   bsPrimaryVariant: 'dark',
   bsSecondaryVariant: 'light',
   socialIconBgColor: '#fefefe',
+  highlightButtonVariant: 'info',
 };
