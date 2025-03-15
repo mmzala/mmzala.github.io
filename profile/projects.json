@@ -42,7 +42,7 @@
         {
             "video": "https://youtu.be/3kV_5KhaPuI",
             "title": "Blightspire",
-            "bodyText": "A work-in-progress engine running on both Linux (Steam Deck) and Windows, using Vulkan.\n - **Type:** School project\n - **Team size:** 10 (9 programmers/1 designer)\n - **Contribution:** Rendering pipeline including a Frame Graph | Steamworks API integration | Input handling including input actions and Steam Input API | CI/CD Pipelines",
+            "bodyText": "A work-in-progress engine running on both Linux (SteamOS) and Windows, using Vulkan.\n - **Type:** School project\n - **Team size:** 10 (9 programmers/1 designer)\n - **Contribution:** Rendering pipeline including a Frame Graph | Steamworks API integration | Input handling including input actions and Steam Input API | CI/CD Pipelines",
             "links": [
                 {
                     "text": "Learn More!",
@@ -64,18 +64,19 @@
             ]
         },
         {
-            "image": "images/DragonRayTrace.png",
-            "title": "Ray-Tracing",
-            "bodyText": "A work-in-progress Vulkan ray-tracer.\n - **Type:** Free time project\n - **Team size:** Solo\n - **Contribution:** Vulkan ray-tracing pipeline | GLTF model loading | And everything else",
+            "image": "images/RayTracedHelmet.jpg",
+            "title": "Path-Tracing",
+            "bodyText": "A work-in-progress Vulkan path-tracer.\n - **Type:** Free time project\n - **Team size:** Solo\n - **Contribution:** Vulkan ray-tracing pipeline | GLTF model loading | Bindless resources | And everything else",
             "links": [
                 {
                     "text": "GitHub",
-                    "href": "https://github.com/mmzala/ray-tracer"
+                    "href": "https://github.com/mmzala/path-tracer"
                 }
             ],
             "tags" : [
                 "C++",
-                "Graphics"
+                "Graphics",
+                "Windows"
             ]
         },
         {
