@@ -64,7 +64,7 @@
             ]
         },
         {
-            "image": "images/RayTracedHelmet.jpg",
+            "image": "images/PathTracedCornellBox.jpg",
             "title": "Path-Tracing",
             "bodyText": "A work-in-progress Vulkan path-tracer.\n - **Type:** Free time project\n - **Team size:** Solo\n - **Contribution:** Vulkan ray-tracing pipeline | GLTF model loading | Bindless resources | And everything else",
             "links": [
